@@ -9,5 +9,6 @@ for k in alphabet:
     if k == i:
         if count + n < lenght:
             print (alphabet[(count+n-1)%lenght])
-        else: print(alphabet[(lenght-count+n-1)%lenght])
+        else: 
+            print(alphabet[(lenght-count+n-1)%lenght])
         
