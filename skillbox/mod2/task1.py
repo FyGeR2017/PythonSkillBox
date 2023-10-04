@@ -1,2 +1,3 @@
-a = int(input('первое число: ')); b = int(input('второе число: '))
-print (a%b)
+numbers = input()
+a, b = int(numbers[:numbers.find(',')]), int(numbers[numbers.find(' ')+1:])
+print(a%b)
