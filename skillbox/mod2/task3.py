@@ -20,4 +20,3 @@ else:
       print(c)
     else:
       print(b)
-
