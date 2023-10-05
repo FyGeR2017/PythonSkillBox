@@ -1,6 +1,6 @@
 conditions = input()
-symbol = conditions[:conditions.find(',')]
-num = int(conditions[conditions.find(',')+1:])         
+symbol = conditions[0]
+num = int(conditions[2:])       
 count = 0
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 lenght = len(alphabet)
