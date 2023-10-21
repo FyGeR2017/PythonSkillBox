@@ -1,4 +1,4 @@
-numbers = [int(x) for x in input().split()]
+numbers = input().split()
 
 if len(set(numbers)) == len(numbers):
     print('Все числа разные')
