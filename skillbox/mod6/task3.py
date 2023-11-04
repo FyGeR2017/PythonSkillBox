@@ -22,5 +22,5 @@ def get_armstrong():
     return next(generator)
 
 
-for _ in range(100):
+for _ in range(8):
     print(get_armstrong(), end=' ')
