@@ -47,18 +47,13 @@ class Transport():
         self.__number = number
 
     def __str__(self):
-        '''
-        Представление всей информации для вывода в методе print()
-        '''
-        pass
+        return f"Transport: Brand - {self.brand}, Year - {self.year}, Number - {self.number}"
 
     def isInArea(self, pos_x, pos_y, length, width) -> bool:
-        '''
-        Присутствие транспортного средства в пределах заданной области
-        pos_x, pos_y - координата левого верхнего угла области
-        length, width - длина и ширина области
-        '''
-        pass
+        if self.coordinates[0] >= pos_x and self.coordinates[0] <= pos_x + length:
+            if self.coordinates[1] >= pos_y and self.coordinates[1] <= pos_y + width:
+                return True
+        return False
 
 
 class Passenger():
